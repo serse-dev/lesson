@@ -11,10 +11,10 @@ genai.configure(api_key="AIzaSyCB2-tcGlXPEgbc9_jWRH4vwltkm7t15a0")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # --- Файлын зам ---
-csv_path = "csv_exports/Plan.csv"
-shalg_path = "csv_exports/Шалгуур.csv"
-criteria_path = "csv_exports/Үр дүнгийн шалгуур.csv"
-level_path = "csv_exports/Гүйцэтгэлийн түвшин.csv"
+csv_path = "Plan.csv"
+shalg_path = "Шалгуур.csv"
+criteria_path = "Үр дүнгийн шалгуур.csv"
+level_path = "Гүйцэтгэлийн түвшин.csv"
 
 # --- Streamlit тохиргоо ---
 st.set_page_config(page_title="Ээлжит хичээлийн төлөвлөлт", page_icon="📚", layout="wide")
@@ -165,3 +165,4 @@ if "df" in locals():
                 file_name="lesson_plan.docx",
                 mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             )
+

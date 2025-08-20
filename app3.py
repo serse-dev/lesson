@@ -6,8 +6,8 @@ import google.generativeai as genai
 from docx import Document
 from io import BytesIO
 
-# --- Gemini API Key (Streamlit Secrets ашиглаж байна) ---
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+# --- Gemini API Key (шууд код дотор бичсэн) ---
+genai.configure(api_key="AIzaSyCB2-tcGlXPEgbc9_jWRH4vwltkm7t15a0")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # --- Файлын зам ---
